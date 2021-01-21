@@ -373,21 +373,10 @@
   <!-- Glidejs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
   <!-- Custom Script -->
-  <script src="./js/slider.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="slider.js"></script>
+  <script src="index.js"></script>
 
-  <?php
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $content  = $_POST['message'];
-
-        $handle = fopen("comments.html", "a");
-        fwrite($handle, '<b class="name">'.$name.'</b> <br> <b class="name">'.$email.'</b><br><p class="msg">'.$content."</p><br>");
-        
-        fclose($handle);
-    }
-?>
+  
 
 </body>
 
